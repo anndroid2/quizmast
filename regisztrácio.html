@@ -51,13 +51,14 @@ async function registerUser() {
   });
 
   if (error) {
-    alert(error.message);
-  } else {
-    alert("Sikeres regisztráció!");
-  }
+  alert(error.message);
+} else {
+  alert("Sikeres regisztráció!");
+  window.location.href = "index.html";   // ← login oldal
 }
 </script>
 
 
 </body>
 </html>
+
